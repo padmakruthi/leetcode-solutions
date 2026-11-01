@@ -1,0 +1,34 @@
+(1-11-26) day:1
+453. Minimum Moves to Equal Array Elements
+Solved
+Medium
+Topics
+premium lock icon
+Companies
+Given an integer array nums of size n, return the minimum number of moves required to make all array elements equal.
+
+explanation:
+Logic:
+
+Find the minimum element.
+
+Subtract minimum from every element.
+
+Add all differences.
+In one move, we increase n-1 elements by 1. This is equivalent to decreasing one element by 1.
+
+So, instead of increasing elements, we imagine decreasing all elements until they become equal to the smallest element.
+
+Example: [1, 2, 3]
+- Minimum element = 1
+- 1 needs 0 moves.
+- 2 needs 1 move.
+- 3 needs 2 moves.
+Total moves = 0 + 1 + 2 = 3
+
+Formula:
+
+Moves = Sum of (each element - minimum element)
+
+Remember: Find minimum → Subtract from each element → Add the differences.
+
